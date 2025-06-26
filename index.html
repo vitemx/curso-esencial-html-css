@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>El Blog de Brand</title>
 </head>
 <body>
     <header>
-        <p>Setup</p>
         <nav>
-            <ol>
-                <li>
-                    <a href="#google-chrome">
-                        Google Chrome
-                    </a>
-                </li>
-                <li>Visual Studio Code</li>
-                <li>Figma</li>
-                <li>GitHub</li>
-            </ol>
-            <p>Conceptos esenciales del Desarrollo Web</p>
-            <ol>
-                <li>Qué es HTML</li>
-                <li>Etiquetas</li>
-                <li>DOM</li>
-                <li>Semántica</li>
-                <li>Atributos</li>
-                <li>Qué es CSS</li>
-            </ol>
+            <details open>
+                <summary>
+                    Setup
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#google-chrome">
+                            Google Chrome
+                        </a>
+                    </li>
+                    <li>Visual Studio Code</li>
+                    <li>Figma</li>
+                    <li>GitHub</li>
+                </ol>
+            </details>
+            <details open>
+                <summary>
+                    Conceptos esenciales del Desarrollo Web
+                </summary>
+                <ol>
+                    <li>Qué es HTML</li>
+                    <li>Etiquetas</li>
+                    <li>DOM</li>
+                    <li>Semántica</li>
+                    <li>Atributos</li>
+                    <li>Qué es CSS</li>
+                </ol>
+            </details>
         </nav>
     </header>
     <h1>
@@ -49,7 +58,7 @@
         desarrollo avanzadas y de amigable uso.
     </p>
     <img src="/images/visual-studio-code.png" alt="logo de google chrome">
-    <h3>
+    <h3 id="visual-studio-code">
         Visual Studio Code
     </h3>
     <p>
@@ -58,7 +67,7 @@
         que se desemvuelva.
     </p>
     <img src="/images/figma.png" alt="logo de figma">
-    <h3>
+    <h3 id="figma">
         Figma
     </h3>
     <p>
@@ -66,7 +75,7 @@
         fácil uso porque puede ser usado directamente desde el navegador.
     </p>
     <img src="/images/github.png" alt="logo de github">
-    <h3>
+    <h3 id="github">
         GitHub
     </h3>
     <p>
@@ -76,13 +85,25 @@
     </p>
     <hr>
     <h2>Conceptos esenciales del Desarrollo Web</h2>
-    <h3>Qué es HTML</h3>
+    <h3 id="html">Qué es HTML</h3>
     <p>
         Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
         y la estructura del contenido.
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
     </p>
     <img src="/images/html.png" alt="que es html ilustracion">
-    <h3>Etiquetas</h3>
+    <h3 id="etiquetas">Etiquetas</h3>
     <p>
         Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene 
         características y usos diferentes aunque visualmente den un resultado similar.
@@ -92,14 +113,14 @@
         div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una pequeña idea 
         de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como Software Developer.
     </p>
-    <h3>DOM</h3>
+    <h3 id="dom">DOM</h3>
     <p>
         El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol 
         genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar 
         dependencias, herencias en css y que tan complejo es nuestro proyecto.
     </p>
     <img src="/images/dom.png" alt="Estructura de arbol que representa al DOM">
-    <h3>Semántica</h3>
+    <h3 id="semantica">Semántica</h3>
     <p> 
         La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y no 
         deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes 
@@ -107,13 +128,13 @@
         la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu 
         sitio web, para que personas con habilidades diferentes puedan entender cada contenido.
     </p>
-    <h3>Atributos</h3>
+    <h3 id="atributos">Atributos</h3>
     <p>
         Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el 
         navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan 
         en solo alguna etiquetas como src
     </p>
-    <h3>CSS</h3>
+    <h3 id="css">CSS</h3>
     <p>
         Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la 
         presentación de documentos HTML
@@ -149,8 +170,16 @@
         <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
     </ul>
-    <a href="https://www.google.com/" target="_blank">web</a>
     <h3>Modelo de caja</h3>
-    <img src="/images/brandon.png" alt="brandon">
+    <img src="/images/dev2.jpg" alt="brandon">
+    
+    <p>Si tienes alguna duda escribeme a: </p><a href="mailito:bramsel.vite@gmail.com">bramsel.vite@gmail.com</a>
+    <h4>Suscribete a nuestro newsletter</h4>
+    <input type="Nombre" placeholder="Nombre"> 
+    <input type="correo" placeholder="Correo Electronico">
+    <input type="button" value="Suscribirme">
+    <footer>
+        <h3>Brandon Vite</h3>
+    </footer>
 </body>
 </html>
