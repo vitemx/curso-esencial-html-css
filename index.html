@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles-physical.css">
+    <link rel="stylesheet" href="./css/styles-logical.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -142,18 +142,18 @@
                     y la estructura del contenido.
                     </p>
                     <pre>
-        &lt;!DOCTYPE html&gt;
-        &lt;html lang=&quot;en&quot;&gt;
-        &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;title&gt;Document&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        
-        &lt;/body&gt;
-        &lt;/html&gt;
-        </pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
                 <h3 id="etiquetas">Etiquetas</h3>
                 <p>
                     Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene 
@@ -221,15 +221,40 @@
                         <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                     </ul>
-                    <h3>Modelo de caja</h3>
-                    <img src="/images/dev2.jpg" alt="brandon">
                 </section>
-                
-                <p>Si tienes alguna duda escribeme a: </p><a href="mailito:bramsel.vite@gmail.com">bramsel.vite@gmail.com</a>
-                <h4>Suscribete a nuestro newsletter</h4>
-                <input type="Nombre" placeholder="Nombre"> 
-                <input type="correo" placeholder="Correo Electronico">
-                <input type="button" value="Suscribirme">
+                <div class="section-content">
+                    <h2>Tu viaje hacia el desarrollo web inicia aqui</h3>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="video-1">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mA9YsRcm2tE?si=DQPEAgDGpl7CjkrN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-2">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/wZbWiqGC45k?si=l_v2E9EyegtJLEjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-3">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5WegAglsQXw?si=F1khYGI9LMO6NrBD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#video-1" class="slider-bullet"></a>
+                            <a href="#video-2" class="slider-bullet"></a>
+                            <a href="#video-3" class="slider-bullet"></a>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Si tienes alguna duda escribeme a
+                    <a href="mailito:bramsel.vite@gmail.com">bramsel.vite@gmail.com</a>
+                </p>
+                <div class="section-content">
+                    <form action="#" class="form">
+                        <h4>Suscribete a nuestro newsletter</h4>
+                        <input type="text" required placeholder="Nombre"> 
+                        <input type="email" required placeholder="Correo Electronico">
+                        <input type="submit" value="Suscribirme">
+                    </form>
+                </div>
             </div>
         </div>
     </main>
